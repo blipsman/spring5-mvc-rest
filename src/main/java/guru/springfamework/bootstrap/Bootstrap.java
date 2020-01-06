@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Bootstrap implements CommandLineRunner{
 
-    private final CategoryRepository categoryRepository;
+    private CategoryRepository categoryRepository;
 
     public Bootstrap(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
