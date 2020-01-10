@@ -85,6 +85,7 @@ public class CategoryControllerTest {
     @Test
     public void testGetByNameNotFound() throws Exception {
 
+
         when(categoryService.getCategoryByName(anyString())).thenThrow(ResourceNotFoundException.class);
 
         mockMvc.perform(get(CategoryController.BASE_URL + "/Foo")
